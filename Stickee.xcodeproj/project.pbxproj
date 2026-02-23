@@ -6,14 +6,90 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F08FCC752F30A25700D18D2E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08FCC742F30A25700D18D2E /* WidgetKit.framework */; };
+		F08FCC772F30A25700D18D2E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08FCC762F30A25700D18D2E /* SwiftUI.framework */; };
+		F08FCC882F30A25800D18D2E /* StickeeWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F08FCC722F30A25600D18D2E /* StickeeWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F08FCC862F30A25800D18D2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F07D3E0E2F18B43000DC310D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F08FCC712F30A25600D18D2E;
+			remoteInfo = StickeeWidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F08FCC8D2F30A25800D18D2E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F08FCC882F30A25800D18D2E /* StickeeWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F07D3E162F18B43000DC310D /* Stickee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stickee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08FCC722F30A25600D18D2E /* StickeeWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StickeeWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08FCC742F30A25700D18D2E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F08FCC762F30A25700D18D2E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F0050E622F4BCA3C00B8D752 /* Exceptions for "Assets" folder in "Stickee" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Colors.swift,
+			);
+			target = F07D3E152F18B43000DC310D /* Stickee */;
+		};
+		F08FCC892F30A25800D18D2E /* Exceptions for "StickeeWidgets" folder in "StickeeWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F08FCC712F30A25600D18D2E /* StickeeWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F0050E142F32D92800B8D752 /* Attributes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		F0050E482F34560600B8D752 /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0050E5C2F4BC6D400B8D752 /* Assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F0050E622F4BCA3C00B8D752 /* Exceptions for "Assets" folder in "Stickee" target */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		F07D3E182F18B43000DC310D /* Stickee */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Stickee;
+			sourceTree = "<group>";
+		};
+		F08FCC782F30A25700D18D2E /* StickeeWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F08FCC892F30A25800D18D2E /* Exceptions for "StickeeWidgets" folder in "StickeeWidgetsExtension" target */,
+			);
+			path = StickeeWidgets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +102,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F08FCC6F2F30A25600D18D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08FCC772F30A25700D18D2E /* SwiftUI.framework in Frameworks */,
+				F08FCC752F30A25700D18D2E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F07D3E0D2F18B43000DC310D = {
 			isa = PBXGroup;
 			children = (
+				F0050E5C2F4BC6D400B8D752 /* Assets */,
+				F0050E482F34560600B8D752 /* ViewModel */,
+				F0050E142F32D92800B8D752 /* Attributes */,
 				F07D3E182F18B43000DC310D /* Stickee */,
+				F08FCC782F30A25700D18D2E /* StickeeWidgets */,
+				F08FCC732F30A25700D18D2E /* Frameworks */,
 				F07D3E172F18B43000DC310D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +131,18 @@
 			isa = PBXGroup;
 			children = (
 				F07D3E162F18B43000DC310D /* Stickee.app */,
+				F08FCC722F30A25600D18D2E /* StickeeWidgetsExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F08FCC732F30A25700D18D2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F08FCC742F30A25700D18D2E /* WidgetKit.framework */,
+				F08FCC762F30A25700D18D2E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,12 +155,17 @@
 				F07D3E122F18B43000DC310D /* Sources */,
 				F07D3E132F18B43000DC310D /* Frameworks */,
 				F07D3E142F18B43000DC310D /* Resources */,
+				F08FCC8D2F30A25800D18D2E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F08FCC872F30A25800D18D2E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				F0050E142F32D92800B8D752 /* Attributes */,
+				F0050E482F34560600B8D752 /* ViewModel */,
+				F0050E5C2F4BC6D400B8D752 /* Assets */,
 				F07D3E182F18B43000DC310D /* Stickee */,
 			);
 			name = Stickee;
@@ -69,6 +174,31 @@
 			productName = Stickee;
 			productReference = F07D3E162F18B43000DC310D /* Stickee.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F08FCC712F30A25600D18D2E /* StickeeWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F08FCC8A2F30A25800D18D2E /* Build configuration list for PBXNativeTarget "StickeeWidgetsExtension" */;
+			buildPhases = (
+				F08FCC6E2F30A25600D18D2E /* Sources */,
+				F08FCC6F2F30A25600D18D2E /* Frameworks */,
+				F08FCC702F30A25600D18D2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F0050E142F32D92800B8D752 /* Attributes */,
+				F0050E482F34560600B8D752 /* ViewModel */,
+				F0050E5C2F4BC6D400B8D752 /* Assets */,
+				F08FCC782F30A25700D18D2E /* StickeeWidgets */,
+			);
+			name = StickeeWidgetsExtension;
+			packageProductDependencies = (
+			);
+			productName = StickeeWidgetsExtension;
+			productReference = F08FCC722F30A25600D18D2E /* StickeeWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +211,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					F07D3E152F18B43000DC310D = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F08FCC712F30A25600D18D2E = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +233,20 @@
 			projectRoot = "";
 			targets = (
 				F07D3E152F18B43000DC310D /* Stickee */,
+				F08FCC712F30A25600D18D2E /* StickeeWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F07D3E142F18B43000DC310D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F08FCC702F30A25600D18D2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +263,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F08FCC6E2F30A25600D18D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F08FCC872F30A25800D18D2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F08FCC712F30A25600D18D2E /* StickeeWidgetsExtension */;
+			targetProxy = F08FCC862F30A25800D18D2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F07D3E1F2F18B43200DC310D /* Debug */ = {
@@ -254,6 +410,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -298,6 +455,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -329,6 +487,71 @@
 			};
 			name = Release;
 		};
+		F08FCC8B2F30A25800D18D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJXA9T739F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StickeeWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StickeeWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StickeeTeam.Stickee.StickeeWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F08FCC8C2F30A25800D18D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJXA9T739F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StickeeWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StickeeWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StickeeTeam.Stickee.StickeeWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -346,6 +569,15 @@
 			buildConfigurations = (
 				F07D3E222F18B43200DC310D /* Debug */,
 				F07D3E232F18B43200DC310D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F08FCC8A2F30A25800D18D2E /* Build configuration list for PBXNativeTarget "StickeeWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F08FCC8B2F30A25800D18D2E /* Debug */,
+				F08FCC8C2F30A25800D18D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
